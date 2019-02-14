@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online form</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   <div class="hidden">
+   <h1>The Code Review</h1>
+   </div>
+   <div class="form">
+		<h1>The Code Review</h1>
+	
+	<form action="index.html" method="post">
+
+	    <h2>Signup for our newsletter</h2>
+	      <p class="p-one">Get the latest news on how your code is doing right in your inbox</p>
+
+	
+		<fieldset class="field">
+			  <legend class="number">Contact Information</legend>
+		  <div class="wrap">
+		  	<div class="flex">
+
+		  	<div class="item">
+
+			  <label for="name" class="name">Full Name</label>
+	          <input type="text" required id="name" name="user_name" placeholder="Required">
+	        </div> 
+
+	        <div class="item">
+	          <label for="mail" class="name">Email Address</label>
+	          <input type="email" required id="mail" name="user_email" placeholder="Required">
+	        </div>
+	          
+	        <div class=item>
+	          <label for="phone" class="name">Phone Number</label>
+	          <input type="tel" required id="phone" name="user_phone" placeholder="Required">
+	        </div>
+
+	        <div class="item">
+
+	          <label for="address" class="name">Street Address</label>
+	          <input type="text" id="address"  name="user_address">
+	        </div>
+
+            <div class="item">
+	          <label for="city" class="name">City</label>
+	          <input type="text" id="city"  name="user_city">
+	        </div>
+
+             <div class="item">
+	          <label for="state" class="name">State</label>
+	           <select id="state" name="user_state">
+	            <optgroup label="State">
+	              <option value="state">Choose State</option>
+	              <option value="alabama">Alabama</option>
+	              <option value="alaska">Alaska</option>
+	              <option value="arizona">Arisona</option>
+	              <option value="arkansas">Arkansas</option>
+	              <option value="california">California</option>
+	              <option value="colorado">Colorado</option>
+	              <option value="connecticut">Connecticut</option>
+	              <option value="delaware">Delaware</option>
+	              <option value="florida">Florida</option>
+	              <option value="georgia">Georgia</option>
+	              <option value="hawaii">Hawaii</option>
+	              <option value="idaho">Idaho</option>
+	              <option value="illinois">Illinois</option>
+	              <option value="indiana">Indiana</option>
+	              <option value="iowa">Iowa</option>
+	              <option value="kansas">Kansas</option>
+	              <option value="kentucky">Kentucky</option>
+	              <option value="louisiana">Louisiana</option>
+	              <option value="maine">Maine</option>
+	              <option value="meryland">Maryland</option>
+	            </optgroup>
+	           </select>
+	      </div>    
+	      <div class="item">    
+	          <label for="zip" class="name">Zip Code</label>
+	          <input type="number" id="zip" name="user_zipcode">
+          </div>
+      </div>
+  </div>
+        </fieldset>
+
+        <fieldset>
+
+	      <legend class="number">Newsletter</legend>
+            
+	          <label class="bl-color">Select the newsletters you would like to receive</label>
+	          <div class="wrap">
+	            <input type="checkbox" id="html-news" value="interest_html" name="user_interest"><label class="bulb" for="html-news">HTML News</label><br>
+                <input type="checkbox" id="css-news" value="interest_css" name="user_interest"><label class="bulb" for="css-news">CSS News</label><br>
+                <input type="checkbox" id="java-news" value="interest_java" name="user_interest"><label class="bulb" for="java-news">Javascript News</label>
+                </div>
+
+	          
+	          <label class="bl-color">Newsletter format</label>
+	          <div class="wrap">
+	          <input type="radio" id="html" value="format_html" name="user_choise"><label for="html" class="bulb">HTML</label><br>
+	          <input type="radio" id="text" value="format_text" name="user_choise"><label for="text" class="bulb">Plain text</label>
+	          </div>
+
+	           <label for="feedback" class="bl-color">Other topics you'd like to hear about</label>
+               <textarea id="feedback" name="user_feedback"></textarea>
+		</fieldset>
+
+		<button type="submit">Sign Up</button>
+		<p>Copyright the Code Review</p>
+	
+
+
+
+	</form>
+   </div>
+ </body>
+</html>

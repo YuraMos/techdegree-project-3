@@ -1,0 +1,303 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Merriweather', serif;
+	background: #f4f7f8;
+	color: #384047;
+}
+
+
+h2 {
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.p-one {
+	font-size: .9em;
+	text-align: center;
+	color: #707C83;
+	padding-bottom: 3px; 
+	margin-bottom: 40px;
+	border-bottom: solid 2px black;
+	font-style: initial;
+
+}
+
+.p-one::after{
+	content:"";
+	display: block;
+	border-bottom: solid 4px black;
+	margin:30px 0 0 0;
+}
+p{
+	font-size: .9em;
+	text-align: center;
+	color: #707C83;
+	padding-bottom: 30px; 
+	margin-bottom: 40px;
+	font-style: italic;
+}
+
+.hidden{
+	display: none;
+}
+
+
+.form {
+  max-width: 320px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+}
+ .form h1{
+ 	background: #541C87;
+	padding: 30px 0;
+	font-size: 1.3em;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin: -10px -20px;
+	border-radius:10px 10px 0 0;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+ }
+
+ .wrap{
+	padding: 10px;
+	background: #86a9e7;
+	border-radius: 6px;
+	margin-bottom: 15px;
+
+}
+
+.bl-color{
+	color:#25292b;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street-address"],
+input[type="city"],
+input[type="postal-code"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #25292b;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="street-address"]:focus,
+input[type="city"]:focus,
+input[type="postal-code"]:focus,
+select:focus {
+	border: 3px solid #08946d;
+}
+
+textarea{
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: 120px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #4b5257;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+
+}
+
+select {
+  padding: 6px;
+  height: 50px;
+  border-radius: 8px;
+
+}
+
+fieldset{
+	border: none;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+legend {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #25292b;
+  font-size: 1.2em;
+
+
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+  font-size: .9em;
+}
+
+label.bulb{
+  font-weight: 300;
+  display: inline;
+  margin-left: 10px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #541C87;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #541C87;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input::placeholder{
+	font-style: italic;
+	font-size: .8em;
+	text-align: right;
+	padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  body{
+	background:initial;
+}
+
+  .form {
+	  max-width: 660px;
+	  margin: 10px auto;
+	  padding: 10px 20px;
+	  background: #fff;
+	  box-shadow: none;
+	  border-radius: 10px;
+}
+
+
+.form h1 {
+	display: none;
+	}
+
+.hidden{
+	display: flex;
+	background: #32bfff;
+	justify-content: center;
+	align-items: center;
+
+	
+
+
+}
+.wrap{
+	background: none;
+	padding: 0;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+
+
+.item{
+	display: flex;
+	margin-bottom: 20px;
+	
+
+}
+
+.name{
+	margin-right: auto;
+	flex-grow: 2;
+	align-self: center;
+}
+
+.field{
+	border-bottom: solid 2px black;
+}
+
+.bl-color{
+	margin-bottom: 15px;
+}
+ 
+ fieldset{
+ 	
+ 	margin-bottom: 30px;
+ }
+ 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="street-address"],
+input[type="city"],
+input[type="postal-code"]
+ {
+  background: rgba(255,255,255,0.1);
+  background-color: #e5f7ff;
+  color: #000;
+  margin-bottom: 0;
+  width: 70%
+}
+
+select{
+  background: rgba(255,255,255,0.1);
+  background-color: #e5f7ff;
+  color: #8a97a0;
+  margin-bottom: 0;
+  width: 40%
+}
+label {
+  color: #25292b;
+  margin-bottom: 0;
+  font-size: .9em;
+  
+}
+  button {
+  	background-color: #32bfff;
+  	border: 1px solid;
+  }
+
+  textarea {
+  	background-color: #99dfff;
+  	color: #05003a;
+  }
+  
+  
+}
+
+
+
