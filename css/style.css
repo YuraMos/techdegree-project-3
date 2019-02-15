@@ -110,6 +110,8 @@ input[type="city"]:focus,
 input[type="postal-code"]:focus,
 select:focus {
 	border: 3px solid #08946d;
+  background-color: #ffefef;
+  transition: background-color 500ms ease-out;
 }
 
 textarea{
